@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <base href="/">
+  <link rel="stylesheet" href="node_modules/materialize-css/bin/materialize.css">
+  <link rel="stylesheet" href="app/contacts-app.css">
+  <script src="node_modules/angular2/bundles/angular2-polyfills.js"></script>
+  <script src="node_modules/systemjs/dist/system.src.js"></script>
+  <script src="node_modules/rxjs/bundles/Rx.js"></script>
+  <script src="node_modules/angular2/bundles/angular2.dev.js"></script>
+  <script src="node_modules/angular2/bundles/router.dev.js"></script>
+  <script>
+    System.config({ packages: { app: { format: 'register', defaultExtension: 'js' }}});
+    System.import('app/contacts-app').then(null, console.error.bind(console));
+  </script>
+</head>
+<body>
+  <contacts-app>Loading...</contacts-app>
+</body>
+</html>
